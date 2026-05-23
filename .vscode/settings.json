@@ -1,9 +1,0 @@
-{
-    "verilog.linting.linter": "iverilog",
-    "verilog.linting.iverilog.arguments": "-g2012",
-    "code-runner.executorMap": {
-    "systemverilog": "iverilog -g2012 $fileName -o $fileNameWithoutExt.vvp && vvp $fileNameWithoutExt.vvp",
-    "verilog": "iverilog $fileName -o $fileNameWithoutExt.vvp && vvp $fileNameWithoutExt.vvp"
-},
-"code-runner.runInTerminal": true
-}
