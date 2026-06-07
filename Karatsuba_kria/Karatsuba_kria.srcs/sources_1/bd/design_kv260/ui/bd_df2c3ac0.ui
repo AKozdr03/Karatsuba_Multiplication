@@ -1,0 +1,28 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.842784",
+   "Default View_TopLeft":"585,62",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 730 -y 240 -defaultsOSRD
+preplace inst naive_ip_0 -pg 1 -lvl 3 -x 1700 -y 310 -defaultsOSRD
+preplace inst karatsuba_ip_0 -pg 1 -lvl 3 -x 1700 -y 120 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 1280 -y 270 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 2 -x 1280 -y 550 -defaultsOSRD
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 1110 440 1600
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 440 340 1100 450 1590
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 1020 240n
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 1450 100n
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 1450 280n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 1020 160n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 1030 180n
+levelinfo -pg 1 -40 730 1280 1700 1800
+pagesize -pg 1 -db -bbox -sgen -40 -320 1800 650
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_clkrst_cnt":"4",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

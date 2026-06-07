@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jun  7 18:50:08 2026
+# Process ID: 63400
+# Current directory: c:/Karatsuba/Karatsuba_Multiplication/ip_repo/edit_karatsuba_pipeline_ip_v1_0.runs/synth_1
+# Command line: vivado.exe -log karatsuba_pipeline_ip.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source karatsuba_pipeline_ip.tcl
+# Log file: c:/Karatsuba/Karatsuba_Multiplication/ip_repo/edit_karatsuba_pipeline_ip_v1_0.runs/synth_1/karatsuba_pipeline_ip.vds
+# Journal file: c:/Karatsuba/Karatsuba_Multiplication/ip_repo/edit_karatsuba_pipeline_ip_v1_0.runs/synth_1\vivado.jou
+# Running On        :Rysiek
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12650H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16851 MB
+# Swap memory       :25556 MB
+# Total Virtual     :42407 MB
+# Available Virtual :7754 MB
+#-----------------------------------------------------------
+source karatsuba_pipeline_ip.tcl -notrace

@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jun  7 22:34:24 2026
+# Process ID: 55716
+# Current directory: C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/karatsuba_1_karatsuba_mult_ip_0_0_synth_1
+# Command line: vivado.exe -log karatsuba_1_karatsuba_mult_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source karatsuba_1_karatsuba_mult_ip_0_0.tcl
+# Log file: C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/karatsuba_1_karatsuba_mult_ip_0_0_synth_1/karatsuba_1_karatsuba_mult_ip_0_0.vds
+# Journal file: C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/karatsuba_1_karatsuba_mult_ip_0_0_synth_1\vivado.jou
+# Running On        :Rysiek
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12650H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16851 MB
+# Swap memory       :29219 MB
+# Total Virtual     :46070 MB
+# Available Virtual :9144 MB
+#-----------------------------------------------------------
+source karatsuba_1_karatsuba_mult_ip_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 523.523 ; gain = 201.438
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_mult_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/naive_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: karatsuba_1_karatsuba_mult_ip_0_0
+Command: synth_design -top karatsuba_1_karatsuba_mult_ip_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 67500
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1957.398 ; gain = 399.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_karatsuba_mult_ip_0_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_karatsuba_mult_ip_0_0/synth/karatsuba_1_karatsuba_mult_ip_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_mult_ip' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip.v:4]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_mult_ip_slave_lite_v1_0_S00_AXI' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:145]
+INFO: [Synth 8-226] default block is never used [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:223]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:308]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_mult' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:380]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_mult' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:380]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_mult_ip_slave_lite_v1_0_S00_AXI' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_mult_ip' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_karatsuba_mult_ip_0_0' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_karatsuba_mult_ip_0_0/synth/karatsuba_1_karatsuba_mult_ip_0_0.v:53]
+WARNING: [Synth 8-7137] Register z1_comb_reg in module karatsuba_mult has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:430]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:217]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ipshared/a2c1/hdl/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI.v:218]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module karatsuba_mult_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module karatsuba_mult_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module karatsuba_mult_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module karatsuba_mult_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module karatsuba_mult_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module karatsuba_mult_ip_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2076.156 ; gain = 517.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2076.156 ; gain = 517.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2076.156 ; gain = 517.762
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2076.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2150.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 2171.133 ; gain = 20.379
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2171.133 ; gain = 612.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2171.133 ; gain = 612.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2171.133 ; gain = 612.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'karatsuba_mult'
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'karatsuba_mult_ip_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'karatsuba_mult_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    CALC |                              010 |                               01
+                  FINISH |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'karatsuba_mult'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Waddr |                               01 |                               10
+                   Wdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'sequential' in module 'karatsuba_mult_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                   Raddr |                               01 |                               10
+                   Rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'karatsuba_mult_ip_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2171.133 ; gain = 612.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   64 Bit       Adders := 1     
+	   4 Input   34 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   8 Input   32 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z20, operation Mode is: A*B.
+DSP Report: operator inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z20 is absorbed into DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z20.
+DSP Report: Generating DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z00, operation Mode is: A*B.
+DSP Report: operator inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z00 is absorbed into DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z00.
+DSP Report: Generating DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z1_temp0, operation Mode is: (D+A)*B.
+DSP Report: operator inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z1_temp0 is absorbed into DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z1_temp0.
+DSP Report: operator inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z1_temp1 is absorbed into DSP inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z1_temp0.
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module karatsuba_1_karatsuba_mult_ip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module karatsuba_1_karatsuba_mult_ip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module karatsuba_1_karatsuba_mult_ip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module karatsuba_1_karatsuba_mult_ip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module karatsuba_1_karatsuba_mult_ip_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module karatsuba_1_karatsuba_mult_ip_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2171.133 ; gain = 612.738
+---------------------------------------------------------------------------------
+ Sort Area is  inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z1_temp0_3 : 0 0 : 2231 2231 : Used 1 time 0
+ Sort Area is  inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z00_2 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is  inst/karatsuba_mult_ip_slave_lite_v1_0_S00_AXI_inst/karatsuba_mult_inst/z20_0 : 0 0 : 1946 1946 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|karatsuba_mult | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|karatsuba_mult | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|karatsuba_mult | (D+A)*B     | 16     | 17     | -      | 16     | 34     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2608.887 ; gain = 1050.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2608.887 ; gain = 1050.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2608.887 ; gain = 1050.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|karatsuba_mult | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|karatsuba_mult | (A*B)'      | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|karatsuba_mult | (D+A*B)'    | 16     | 17     | -      | 16     | 34     | 0    | 0    | -    | 0    | 0     | 0    | 1    | 
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    14|
+|2     |DSP_ALU         |     3|
+|3     |DSP_A_B_DATA    |     3|
+|4     |DSP_C_DATA      |     3|
+|5     |DSP_MULTIPLIER  |     3|
+|7     |DSP_M_DATA      |     3|
+|8     |DSP_OUTPUT      |     3|
+|9     |DSP_PREADD      |     3|
+|10    |DSP_PREADD_DATA |     3|
+|12    |LUT1            |     1|
+|13    |LUT2            |    85|
+|14    |LUT3            |    34|
+|15    |LUT4            |    34|
+|16    |LUT5            |    68|
+|17    |LUT6            |    50|
+|18    |FDCE            |    68|
+|19    |FDPE            |     1|
+|20    |FDRE            |   143|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 2621.621 ; gain = 968.250
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2621.621 ; gain = 1063.227
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2621.621 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2621.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+
+Synth Design complete | Checksum: 45fbbd62
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2621.621 ; gain = 2034.547
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2621.621 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/karatsuba_1_karatsuba_mult_ip_0_0_synth_1/karatsuba_1_karatsuba_mult_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP karatsuba_1_karatsuba_mult_ip_0_0, cache-ID = 804cc74b4c03d22f
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2621.621 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/karatsuba_1_karatsuba_mult_ip_0_0_synth_1/karatsuba_1_karatsuba_mult_ip_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file karatsuba_1_karatsuba_mult_ip_0_0_utilization_synth.rpt -pb karatsuba_1_karatsuba_mult_ip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 22:35:38 2026...

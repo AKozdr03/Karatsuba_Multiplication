@@ -1,0 +1,295 @@
+
+*** Running vivado
+    with args -log karatsuba_pipeline_ip.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source karatsuba_pipeline_ip.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sun Jun  7 18:50:08 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source karatsuba_pipeline_ip.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 523.262 ; gain = 201.555
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/naive_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/karatsuba/karatsuba_multiplication/ip_repo/edit_karatsuba_pipeline_ip_v1_0.cache/ip 
+Command: synth_design -top karatsuba_pipeline_ip -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 70460
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 997.758 ; gain = 443.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_pipeline_ip' [c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0/hdl/karatsuba_pipeline_ip.v:4]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_pipeline' [c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0/hdl/karatsuba_pipeline_ip.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_pipeline' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0/hdl/karatsuba_pipeline_ip.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_pipeline_ip' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0/hdl/karatsuba_pipeline_ip.v:4]
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[0] driven by constant 1
+WARNING: [Synth 8-7129] Port s00_axis_aresetn in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module karatsuba_pipeline_ip is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1109.582 ; gain = 555.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1109.582 ; gain = 555.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1109.582 ; gain = 555.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1109.582 ; gain = 555.383
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP karatsuba_pipeline_inst/z1_temp_stg2_reg, operation Mode is: ((D+A)*B2)'.
+DSP Report: register karatsuba_pipeline_inst/sum_y_stg1_reg is absorbed into DSP karatsuba_pipeline_inst/z1_temp_stg2_reg.
+DSP Report: register karatsuba_pipeline_inst/z1_temp_stg2_reg is absorbed into DSP karatsuba_pipeline_inst/z1_temp_stg2_reg.
+DSP Report: register karatsuba_pipeline_inst/sum_x_stg1_reg is absorbed into DSP karatsuba_pipeline_inst/z1_temp_stg2_reg.
+DSP Report: operator karatsuba_pipeline_inst/z1_temp_stg20 is absorbed into DSP karatsuba_pipeline_inst/z1_temp_stg2_reg.
+DSP Report: operator karatsuba_pipeline_inst/sum_x_stg10 is absorbed into DSP karatsuba_pipeline_inst/z1_temp_stg2_reg.
+DSP Report: Generating DSP karatsuba_pipeline_inst/z1_comb, operation Mode is: PCIN-(A:0x0):B''-C'.
+DSP Report: register karatsuba_pipeline_inst/z2_stg1_reg is absorbed into DSP karatsuba_pipeline_inst/z1_comb.
+DSP Report: register karatsuba_pipeline_inst/z2_stg2_reg is absorbed into DSP karatsuba_pipeline_inst/z1_comb.
+DSP Report: register karatsuba_pipeline_inst/z0_stg2_reg is absorbed into DSP karatsuba_pipeline_inst/z1_comb.
+DSP Report: operator karatsuba_pipeline_inst/z1_comb is absorbed into DSP karatsuba_pipeline_inst/z1_comb.
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[3] driven by constant 1
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[2] driven by constant 1
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[1] driven by constant 1
+WARNING: [Synth 8-3917] design karatsuba_pipeline_ip has port m00_axis_tstrb[0] driven by constant 1
+WARNING: [Synth 8-7129] Port s00_axis_aresetn in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module karatsuba_pipeline_ip is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module karatsuba_pipeline_ip is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+ Sort Area is  karatsuba_pipeline_inst/z1_temp_stg2_reg_0 : 0 0 : 613 927 : Used 1 time 0
+ Sort Area is  karatsuba_pipeline_inst/z1_temp_stg2_reg_0 : 0 1 : 314 927 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|karatsuba_pipeline | ((D+A)*B2)'         | 8      | 9      | -      | 8      | 18     | 0    | 1    | -    | 0    | 1     | 1    | 0    | 
+|karatsuba_pipeline | PCIN-(A:0x0):B''-C' | 30     | 16     | 16     | -      | -1     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
++-------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tvalid_OBUF with 1st driver pin 's00_axis_tvalid_IBUF_inst/O' [c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0/hdl/karatsuba_pipeline_ip.v:4]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin m00_axis_tvalid_OBUF with 2nd driver pin 'karatsuba_pipeline_inst/valid_out_reg/Q' [c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0/hdl/karatsuba_pipeline_ip.v:153]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|karatsuba_pipeline_ip | karatsuba_pipeline_inst/valid_out_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|karatsuba_pipeline | ((D+A)'*B')'    | 8      | 9      | -      | 8      | 0      | 0    | 1    | -    | 1    | 1     | 1    | 0    | 
+|karatsuba_pipeline | PCIN-(A:B''+C') | 0      | 16     | -      | -      | 18     | 0    | 2    | -    | -    | -     | 0    | 0    | 
++-------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY8  |    18|
+|3     |DSP48E2 |     2|
+|4     |LUT2    |    76|
+|5     |LUT3    |     6|
+|6     |LUT4    |    42|
+|7     |LUT5    |     6|
+|8     |LUT6    |    74|
+|9     |SRL16E  |     1|
+|10    |FDRE    |    97|
+|11    |IBUF    |    36|
+|12    |OBUF    |    39|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |   398|
+|2     |  karatsuba_pipeline_inst |karatsuba_pipeline |   322|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:50 . Memory (MB): peak = 1882.172 ; gain = 1327.973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1882.172 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1964.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 2 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 36 instances
+
+Synth Design complete | Checksum: 60826277
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 24 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:54 . Memory (MB): peak = 1964.516 ; gain = 1410.316
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1964.516 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/edit_karatsuba_pipeline_ip_v1_0.runs/synth_1/karatsuba_pipeline_ip.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file karatsuba_pipeline_ip_utilization_synth.rpt -pb karatsuba_pipeline_ip_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 18:51:17 2026...

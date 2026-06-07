@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jun  7 22:36:02 2026
+# Process ID: 40572
+# Current directory: C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1
+# Command line: vivado.exe -log karatsuba_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source karatsuba_1_wrapper.tcl
+# Log file: C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/karatsuba_1_wrapper.vds
+# Journal file: C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1\vivado.jou
+# Running On        :Rysiek
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12650H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16851 MB
+# Swap memory       :29061 MB
+# Total Virtual     :45912 MB
+# Available Virtual :9307 MB
+#-----------------------------------------------------------
+source karatsuba_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 524.008 ; gain = 203.863
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_mult_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_pipeline_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/naive_ip_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Karatsuba/Karatsuba_Multiplication/ip_repo/karatsuba_ip_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.srcs/utils_1/imports/synth_1/design_kv260_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.srcs/utils_1/imports/synth_1/design_kv260_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top karatsuba_1_wrapper -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1987.566 ; gain = 396.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_wrapper' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/hdl/karatsuba_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_axi_dma_0_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_axi_dma_0_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'karatsuba_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'karatsuba_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'karatsuba_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'karatsuba_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'karatsuba_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'karatsuba_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'karatsuba_1_axi_dma_0_0' has 64 connections declared, but only 58 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:186]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_axi_interconnect_0_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:571]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_BYL8KW' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2126]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_BYL8KW' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2126]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1E5I3HQ' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2251]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1E5I3HQ' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2251]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1LODYVH' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2397]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1LODYVH' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2397]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1J8S1PC' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2543]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_auto_ds_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_auto_ds_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_auto_pc_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_auto_pc_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1J8S1PC' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2543]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_xbar_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_xbar_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_axi_interconnect_0_0' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:571]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_axi_interconnect_1_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1265]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_13K0RSU' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1854]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_13K0RSU' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1854]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_RCKTRI' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2953]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_auto_us_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_auto_us_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'karatsuba_1_auto_us_0' is unconnected for instance 'auto_us' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:3080]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'karatsuba_1_auto_us_0' has 34 connections declared, but only 33 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:3080]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_RCKTRI' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:2953]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1YA2UCW' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_auto_us_1' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_auto_us_1' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'karatsuba_1_auto_us_1' is unconnected for instance 'auto_us' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:3267]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'karatsuba_1_auto_us_1' has 40 connections declared, but only 39 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:3267]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1YA2UCW' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_xbar_1' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_xbar_1' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'karatsuba_1_xbar_1' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1825]
+WARNING: [Synth 8-689] width (128) of port connection 's_axi_rdata' does not match port width (256) of module 'karatsuba_1_xbar_1' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1842]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'karatsuba_1_xbar_1' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1843]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'karatsuba_1_xbar_1' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1845]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'karatsuba_1_xbar_1' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1846]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'karatsuba_1_xbar_1' is unconnected for instance 'xbar' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1777]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'karatsuba_1_xbar_1' is unconnected for instance 'xbar' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1777]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'karatsuba_1_xbar_1' is unconnected for instance 'xbar' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1777]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'karatsuba_1_xbar_1' is unconnected for instance 'xbar' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1777]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'karatsuba_1_xbar_1' has 78 connections declared, but only 74 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1777]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_axi_interconnect_1_0' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:1265]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_karatsuba_mult_ip_0_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_karatsuba_mult_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_karatsuba_mult_ip_0_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_karatsuba_mult_ip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_karatsuba_pipeline_ip_0_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_karatsuba_pipeline_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_karatsuba_pipeline_ip_0_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_karatsuba_pipeline_ip_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm00_axis_tstrb' of module 'karatsuba_1_karatsuba_pipeline_ip_0_0' is unconnected for instance 'karatsuba_pipeline_ip_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:444]
+WARNING: [Synth 8-7023] instance 'karatsuba_pipeline_ip_0' of module 'karatsuba_1_karatsuba_pipeline_ip_0_0' has 14 connections declared, but only 13 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:444]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_naive_ip_0_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_naive_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_naive_ip_0_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_naive_ip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_rst_ps8_0_99M_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_rst_ps8_0_99M_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'karatsuba_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:480]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'karatsuba_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:480]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'karatsuba_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:480]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'karatsuba_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:480]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'karatsuba_1_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:480]
+INFO: [Synth 8-6157] synthesizing module 'karatsuba_1_zynq_ultra_ps_e_0_0' [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/.Xil/Vivado-40572-Rysiek/realtime/karatsuba_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'karatsuba_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:487]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'karatsuba_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:487]
+WARNING: [Synth 8-7071] port 'pl_clk1' of module 'karatsuba_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:487]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'karatsuba_1_zynq_ultra_ps_e_0_0' has 84 connections declared, but only 81 given [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:487]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/synth/karatsuba_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'karatsuba_1_wrapper' (0#1) [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/hdl/karatsuba_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1YA2UCW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1YA2UCW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_RCKTRI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_RCKTRI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_13K0RSU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_13K0RSU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_13K0RSU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_13K0RSU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1J8S1PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1J8S1PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_1LODYVH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_1LODYVH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_1LODYVH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_1LODYVH is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1E5I3HQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1E5I3HQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1E5I3HQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1E5I3HQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_BYL8KW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_BYL8KW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_BYL8KW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_BYL8KW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2109.852 ; gain = 519.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2109.852 ; gain = 519.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2109.852 ; gain = 519.152
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2109.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_karatsuba_pipeline_ip_0_0/karatsuba_1_karatsuba_pipeline_ip_0_0/karatsuba_1_karatsuba_pipeline_ip_0_0_in_context.xdc] for cell 'karatsuba_1_i/karatsuba_pipeline_ip_0'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_karatsuba_pipeline_ip_0_0/karatsuba_1_karatsuba_pipeline_ip_0_0/karatsuba_1_karatsuba_pipeline_ip_0_0_in_context.xdc] for cell 'karatsuba_1_i/karatsuba_pipeline_ip_0'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_axi_dma_0_0/karatsuba_1_axi_dma_0_0/karatsuba_1_axi_dma_0_0_in_context.xdc] for cell 'karatsuba_1_i/axi_dma_0'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_axi_dma_0_0/karatsuba_1_axi_dma_0_0/karatsuba_1_axi_dma_0_0_in_context.xdc] for cell 'karatsuba_1_i/axi_dma_0'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_xbar_0/karatsuba_1_xbar_0/karatsuba_1_xbar_0_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_xbar_0/karatsuba_1_xbar_0/karatsuba_1_xbar_0_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_0/xbar'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_ds_0/karatsuba_1_auto_ds_0/design_kv260_auto_ds_0_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_0/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_ds_0/karatsuba_1_auto_ds_0/design_kv260_auto_ds_0_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_0/s00_couplers/auto_ds'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_pc_0/karatsuba_1_auto_pc_0/design_kv260_auto_pc_1_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_pc_0/karatsuba_1_auto_pc_0/design_kv260_auto_pc_1_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_xbar_1/karatsuba_1_xbar_1/karatsuba_1_xbar_1_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_1/xbar'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_xbar_1/karatsuba_1_xbar_1/karatsuba_1_xbar_1_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_1/xbar'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_us_0/karatsuba_1_auto_us_0/karatsuba_1_auto_us_0_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_1/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_us_0/karatsuba_1_auto_us_0/karatsuba_1_auto_us_0_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_1/s00_couplers/auto_us'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_us_1/karatsuba_1_auto_us_1/karatsuba_1_auto_us_1_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_1/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_auto_us_1/karatsuba_1_auto_us_1/karatsuba_1_auto_us_1_in_context.xdc] for cell 'karatsuba_1_i/axi_interconnect_1/s01_couplers/auto_us'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_zynq_ultra_ps_e_0_0/karatsuba_1_zynq_ultra_ps_e_0_0/karatsuba_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'karatsuba_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_zynq_ultra_ps_e_0_0/karatsuba_1_zynq_ultra_ps_e_0_0/karatsuba_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'karatsuba_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_naive_ip_0_0/karatsuba_1_naive_ip_0_0/karatsuba_1_naive_ip_0_0_in_context.xdc] for cell 'karatsuba_1_i/naive_ip_0'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_naive_ip_0_0/karatsuba_1_naive_ip_0_0/karatsuba_1_naive_ip_0_0_in_context.xdc] for cell 'karatsuba_1_i/naive_ip_0'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_rst_ps8_0_99M_0/karatsuba_1_rst_ps8_0_99M_0/design_kv260_rst_ps8_0_99M_0_in_context.xdc] for cell 'karatsuba_1_i/rst_ps8_0_99M'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_rst_ps8_0_99M_0/karatsuba_1_rst_ps8_0_99M_0/design_kv260_rst_ps8_0_99M_0_in_context.xdc] for cell 'karatsuba_1_i/rst_ps8_0_99M'
+Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_karatsuba_mult_ip_0_0/karatsuba_1_karatsuba_mult_ip_0_0/karatsuba_1_karatsuba_mult_ip_0_0_in_context.xdc] for cell 'karatsuba_1_i/karatsuba_mult_ip_0'
+Finished Parsing XDC File [c:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.gen/sources_1/bd/karatsuba_1/ip/karatsuba_1_karatsuba_mult_ip_0_0/karatsuba_1_karatsuba_mult_ip_0_0/karatsuba_1_karatsuba_mult_ip_0_0_in_context.xdc] for cell 'karatsuba_1_i/karatsuba_mult_ip_0'
+Parsing XDC File [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2113.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2113.676 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2113.676 ; gain = 522.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2113.676 ; gain = 522.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/karatsuba_pipeline_ip_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_0/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_1/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_1/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_1/s01_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/axi_interconnect_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/naive_ip_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for karatsuba_1_i/karatsuba_mult_ip_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2113.676 ; gain = 522.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2113.676 ; gain = 522.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[5] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[4] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[3] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[2] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_bid[1] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[5] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[4] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[3] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[2] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_AXI_rid[1] in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module karatsuba_1_axi_interconnect_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module karatsuba_1_axi_interconnect_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2113.676 ; gain = 522.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2596.969 ; gain = 1006.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2596.969 ; gain = 1006.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2607.527 ; gain = 1016.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------------+----------+
+|      |BlackBox name                         |Instances |
++------+--------------------------------------+----------+
+|1     |karatsuba_1_axi_dma_0_0               |         1|
+|2     |karatsuba_1_xbar_0                    |         1|
+|3     |karatsuba_1_auto_ds_0                 |         1|
+|4     |karatsuba_1_auto_pc_0                 |         1|
+|5     |karatsuba_1_xbar_1                    |         1|
+|6     |karatsuba_1_auto_us_0                 |         1|
+|7     |karatsuba_1_auto_us_1                 |         1|
+|8     |karatsuba_1_karatsuba_mult_ip_0_0     |         1|
+|9     |karatsuba_1_karatsuba_pipeline_ip_0_0 |         1|
+|10    |karatsuba_1_naive_ip_0_0              |         1|
+|11    |karatsuba_1_rst_ps8_0_99M_0           |         1|
+|12    |karatsuba_1_zynq_ultra_ps_e_0_0       |         1|
++------+--------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |karatsuba_1_auto_ds                 |     1|
+|2     |karatsuba_1_auto_pc                 |     1|
+|3     |karatsuba_1_auto_us                 |     2|
+|5     |karatsuba_1_axi_dma_0               |     1|
+|6     |karatsuba_1_karatsuba_mult_ip_0     |     1|
+|7     |karatsuba_1_karatsuba_pipeline_ip_0 |     1|
+|8     |karatsuba_1_naive_ip_0              |     1|
+|9     |karatsuba_1_rst_ps8_0_99M           |     1|
+|10    |karatsuba_1_xbar                    |     2|
+|12    |karatsuba_1_zynq_ultra_ps_e_0       |     1|
++------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 2622.188 ; gain = 1027.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 2622.188 ; gain = 1031.488
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2622.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2622.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1e5abe28
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 2622.188 ; gain = 2034.652
+INFO: [Common 17-1381] The checkpoint 'C:/Karatsuba/Karatsuba_Multiplication/Karatsuba_kria/Karatsuba_kria.runs/synth_1/karatsuba_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file karatsuba_1_wrapper_utilization_synth.rpt -pb karatsuba_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 22:37:09 2026...
