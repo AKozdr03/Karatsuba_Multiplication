@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module karatsuba_pipeline #(
-    parameter int WIDTH = 256
+    parameter int WIDTH = 16
 )(
     input  logic clk,
     input  logic valid_in,             
